@@ -1,0 +1,10 @@
+ @media only screen and (max-width: 680px) {
+   .main-menu{
+       display: none;
+   }
+   .main-banner{
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+   }
+  } 

@@ -5,12 +5,16 @@
 ------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
+     width:100%;
+     height:100%;
+     overflow-x: hidden;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
 }
@@ -60,8 +64,10 @@ img{
 --------------------------------------- */
 .header-section{
     background-color:#2d25a0 ;
-    width: 100%;
+    max-width: 1440px;
     height: 677px;
+    justify-content: center;
+    align-items: center;
 }
 .main-menu{
     
@@ -94,32 +100,44 @@ img{
     color: #FFFFFF;
     margin-right: 10px;
 }
-.banner{
+.main-banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 51px;
+}
+.banner{
+    display: flex;
+     margin-top: 51px;
+    width: 1050px;
+    height: 474px;
 }
 .banner .banner-left{
     width: 461px;
 }
 .banner .banner-left h1{
     color: #FFFFFF;
-    font-size: 68px;
-    line-height: 75px;
+    font-size: 67px;
+    line-height: 76px;
+    width: 461px;
+    height: 230px;
+    font-weight: 700;
 }
+
 
 .banner .banner-right{
     margin-left: 173px;
+    width: 556.01px;
+    height: 438px;
 }
 .live-btn{
     margin-left: 8px;
     margin-top: 10px;
 }
-.banner .banner-right img{
-    width: 556.01px;
-    height: 438px;
+
+
+.banner .banner-right img{  
     transition: all 0.5s;
+    max-width: 100%;
 }
 .banner .banner-right img:hover{
      transform: scale(1.1);
@@ -130,4 +148,197 @@ img{
 
 /*------------------------------------
           blog style start
+--------------------------------------- */
+.blogs-section{
+   display: flex;
+   justify-content: center;
+   margin-top: 70px;
+}
+article{
+ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: 1050px;
+    
+}
+.blog{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    width: 330px;
+    min-height: 474px;
+    max-height: 570px;
+}
+.blog-img{
+    text-align: center;
+    margin: 15px;
+}
+.blog-img img{
+    height: 256px;
+    width: 300px;
+}
+.blog-info{
+    padding: 0px 15px 15px 15px;
+    text-align: justify;
+}
+.blog-info h1{
+    color:#18191F ;
+    font-size: 28px;
+    font-weight: bold;
+}
+.blog-info p{
+    color: #6C6C6C;
+}
+/*------------------------------------
+          blog style end
+--------------------------------------- */
+/*------------------------------------
+          copa-america  style start
+--------------------------------------- */
+.copa-america{}
+.copa-america-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copa-left{
+    width: 469px;
+    height: 309px;
+    margin-top: 224px;
+    margin-right: 81px;
+}
+.copa-left h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.copa-left p{
+    color: #6C6C6C;
+    font-size: 16ox;
+    line-height: 28px;
+}
+.copa-right{
+    width: 567px;
+    height: 427px;
+    margin-top: 165px;
+}
+.copa-right img{
+
+}
+/*------------------------------------
+          copa-america style end
+--------------------------------------- */
+.VS{
+    text-align: center;
+}
+.VS h1{
+    font-size: 56px;
+    font-weight: bold;
+    
+}
+/*------------------------------------
+          Match  Final style start
+--------------------------------------- */
+.match{
+    background-color: black;
+    margin-top: 60px;
+    max-width: 1440px;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+}
+    
+.main-match{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Argenting{
+    text-align: center;
+}
+.Argenting h2{
+    color: #FFFFFF;
+    margin-top: -30px;
+}
+.flag-A img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.live-mathc {
+    text-align: center;
+    color: #FFFFFF;
+}
+.live-mathc h1{
+    
+    font-size: 43px;
+
+}
+.live-mathc h2{}
+.live-mathc h3{}
+.brazil{
+    text-align: center;
+   
+}
+.brazil img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.brazil h2{
+    color:#FFFFFF;
+    margin-top: -30px;
+}
+
+/*------------------------------------
+          Match  Final style end
+--------------------------------------- */
+
+
+/*------------------------------------
+          Footer style start
+          
+--------------------------------------- */
+
+footer{
+   
+   
+}
+.footer-all{
+    justify-content: center;
+    display: flex;
+}
+.footer-itame p{
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.footer-logo{
+    height: 58px;
+    width: 270px;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon li a{
+    display: inline-block;
+    margin-top: 20px;
+}
+.footer-icon .socal{
+    height: 32px;
+    width: 32px;
+    background: #969BAB;
+    margin-left: 20px;
+    color: #dddde1;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 35px;
+}
+.copy-right{
+    color: #969BAB;
+}
+/*------------------------------------
+          Footer style end
+          
 --------------------------------------- */
